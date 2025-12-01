@@ -19,7 +19,7 @@
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
-   :realizes: PROCESS_wp__tool_verification_report
+   :realizes: wp__tool_verification_report
    :tags: tool_management
 
 ITF (Integration Testing Framework) Verification Report
@@ -29,11 +29,11 @@ Introduction
 ------------
 Scope and purpose
 ~~~~~~~~~~~~~~~~~
-ITF is a framework that provides supporting functionality for running tests based on pytest.
-It is designed to simplify the development of integration tests by offering utilities
-such as SSH connection setup, dataframe interpretation, and reading diagnostic messages.
-
-ITF supports running tests on both emulators (QEMU) and physical hardware.
+ITF is a pytest-based integration testing framework that simplifies writing and
+running integration tests. It provides utilities for common integration tasks
+— for example, SSH connection setup, interpreting dataframes, parsing
+diagnostic messages, etc. ITF can execute tests on emulators (QEMU) as well as on
+physical hardware.
 
 Inputs and outputs
 ~~~~~~~~~~~~~~~~~~
@@ -108,7 +108,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
        |
        | ITF was not able to save results in file(s).
      - yes
-     - (implicit) Check test run status
+     - (implicit) Check ITF test run status
      - yes
      - no
      - high
@@ -186,7 +186,7 @@ This section outlines the security evaluation of ITF for its use within the S-CO
 
 Result
 ~~~~~~
-ITF requires qualification for use in safety-related software development according to ISO 26262.
+ITF requires qualification for use in safety-related software development.
 
 
 **Tool Qualification**
