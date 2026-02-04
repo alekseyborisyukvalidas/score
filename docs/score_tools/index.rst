@@ -35,3 +35,5 @@ S-CORE Tools Overview
    rustfmt
    itf
    clippy
+   gcc
+   qcc
