@@ -174,6 +174,10 @@ Based on method: validation of the software tool.
 
 Requirements and testing aspects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-GCC is an open-source tool and has already been qualified by the tool provider in many environments. For use in safety-related contexts, it is mandatory to follow the GCC safety manual and ensure that all relevant mitigations and user responsibilities described therein are fully applied.
+
+GCC is an open-source tool and does not provide formal, vendor-defined requirements.
+Therefore, the tooling team is responsible for qualification of GCC used for the the project.
+The requirements for testing must be derived from tool version, configuration (compiler flags, etc.)
+and environment.
 
 .. [1] The tool version mentioned in this document is preliminary. It is subject to change and will be updated in future.
